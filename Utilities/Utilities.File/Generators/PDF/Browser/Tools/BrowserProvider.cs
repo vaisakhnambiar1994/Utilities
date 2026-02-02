@@ -1,5 +1,4 @@
-﻿using GoetheApp.Core.Managers;
-using Microsoft.Playwright;
+﻿using Microsoft.Playwright;
 
 namespace Utilities.File.Generators.PDF.Browser.Tools
 {
@@ -25,7 +24,7 @@ namespace Utilities.File.Generators.PDF.Browser.Tools
                     {
                         Headless = true,
                         Args = new[] { "--no-sandbox", "--disable-setuid-sandbox" },
-                        ExecutablePath = ApplicationConfigurationManager.GetValue<string>(Constants.ChromiumExecutablePath)
+                        ExecutablePath = ""
                     });
                 }
                 return await _browser.NewContextAsync();

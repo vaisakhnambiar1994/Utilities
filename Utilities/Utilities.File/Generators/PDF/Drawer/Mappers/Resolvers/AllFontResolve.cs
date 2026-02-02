@@ -1,5 +1,4 @@
-﻿using GoetheApp.Core.Models.Exceptions;
-using PdfSharp.Fonts;
+﻿using PdfSharp.Fonts;
 
 namespace Utilities.File.Generators.PDF.Drawer.Mappers.Resolvers
 {
@@ -45,7 +44,7 @@ namespace Utilities.File.Generators.PDF.Drawer.Mappers.Resolvers
         {
             if (_fontData.TryGetValue(faceName, out byte[] data))
                 return data;
-            throw new ApplicationException<InvalidOperationException>($"Font data not found for '{faceName}'");
+            throw new Exception($"Font data not found for '{faceName}'");
         }
     }
 }
