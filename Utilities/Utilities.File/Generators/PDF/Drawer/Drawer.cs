@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
+using PdfSharp;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
 using Utilities.File.Generators.PDF.Drawer.Contracts;
 using Utilities.File.Generators.PDF.Drawer.Managers;
 using Utilities.File.Generators.PDF.Drawer.Models.TemplateModels;
 using Utilities.File.Generators.PDF.Drawer.Models.ToolModels;
 using Utilities.File.Readers.Contracts;
-using PdfSharp;
-using PdfSharp.Drawing;
-using PdfSharp.Pdf;
 
 namespace Utilities.File.Generators.PDF.Drawer
 {

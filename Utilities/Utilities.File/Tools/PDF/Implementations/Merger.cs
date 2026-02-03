@@ -1,6 +1,6 @@
-﻿using Utilities.File.Tools.PDF.Contracts;
-using PdfSharp.Pdf;
+﻿using PdfSharp.Pdf;
 using PdfSharp.Pdf.IO;
+using Utilities.File.Tools.PDF.Contracts;
 
 namespace Utilities.File.Tools.PDF.Implementations
 {

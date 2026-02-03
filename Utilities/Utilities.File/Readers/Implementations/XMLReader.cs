@@ -1,6 +1,5 @@
-﻿using GoetheApp.Core.Models.Exceptions;
+﻿using System.Xml.Serialization;
 using Utilities.File.Readers.Contracts;
-using System.Xml.Serialization;
 
 namespace Utilities.File.Readers.Implementations
 {
@@ -9,7 +8,7 @@ namespace Utilities.File.Readers.Implementations
         public T Deserialize<T>(string xml)
         {
             if (string.IsNullOrWhiteSpace(xml))
-                throw new ApplicationException<ArgumentException>("XML input is null or empty.");
+                throw new ArgumentException("XML input is null or empty.");
 
             var serializer = new XmlSerializer(typeof(T));
 
@@ -17,7 +16,7 @@ namespace Utilities.File.Readers.Implementations
             {
                 var result = serializer.Deserialize(reader);
                 if (result == null)
-                    throw new ApplicationException<InvalidOperationException>($"Failed to deserialize XML into type {typeof(T).FullName}.");
+                    throw new InvalidOperationException($"Failed to deserialize XML into type {typeof(T).FullName}.");
 
                 return (T)result;
             }

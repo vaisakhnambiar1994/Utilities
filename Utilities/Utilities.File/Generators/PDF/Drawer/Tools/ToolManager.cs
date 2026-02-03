@@ -1,7 +1,6 @@
-﻿using GoetheApp.Core.Models.Exceptions;
+﻿using PdfSharp.Drawing;
 using Utilities.File.Generators.PDF.Drawer.Tools.Contracts;
 using Utilities.File.Generators.PDF.Drawer.Tools.Implementations;
-using PdfSharp.Drawing;
 
 namespace Utilities.File.Generators.PDF.Drawer.Tools
 {
@@ -31,7 +30,7 @@ namespace Utilities.File.Generators.PDF.Drawer.Tools
             if (typeof(T) == typeof(Line))
                 return _line;
 
-            throw new ApplicationException<InvalidCastException>("No tool found");
+            throw new InvalidCastException("No tool found");
         }
     }
 }

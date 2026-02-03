@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
+using PdfSharp.Drawing;
+using PdfSharp.Fonts;
 using Utilities.File.Generators.PDF.Drawer.Mappers.Resolvers;
 using Utilities.File.Generators.PDF.Drawer.Models.TemplateModels;
 using Utilities.File.Generators.PDF.Drawer.Models.ToolModels;
-using PdfSharp.Drawing;
-using PdfSharp.Fonts;
 
 namespace Utilities.File.Generators.PDF.Drawer.Mappers
 {

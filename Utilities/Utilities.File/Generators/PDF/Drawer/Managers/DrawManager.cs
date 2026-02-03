@@ -1,8 +1,8 @@
-﻿using Utilities.File.Generators.PDF.Drawer.Contracts;
+﻿using PdfSharp.Drawing;
+using Utilities.File.Generators.PDF.Drawer.Contracts;
 using Utilities.File.Generators.PDF.Drawer.Implementations;
 using Utilities.File.Generators.PDF.Drawer.Models.ToolModels;
 using Utilities.File.Generators.PDF.Drawer.Tools;
-using PdfSharp.Drawing;
 
 namespace Utilities.File.Generators.PDF.Drawer.Managers
 {

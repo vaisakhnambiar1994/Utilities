@@ -1,6 +1,6 @@
-﻿using Utilities.File.Generators.PDF.Browser.Contracts;
+﻿using System.Reflection;
+using Utilities.File.Generators.PDF.Browser.Contracts;
 using Utilities.File.Generators.PDF.Browser.Tools;
-using System.Reflection;
 
 namespace Utilities.File.Generators.PDF.Browser
 {

@@ -1,9 +1,8 @@
 ﻿using FastReport;
-using FastReport.Export.PdfSimple;
+using System.Text;
 using Utilities.File.Generators.PDF.FastReport.Contracts;
 using Utilities.File.Generators.PDF.FastReport.Manager;
 using Utilities.File.Generators.PDF.FastReport.Models;
-using System.Text;
 
 namespace Utilities.File.Generators.PDF.FastReport
 {

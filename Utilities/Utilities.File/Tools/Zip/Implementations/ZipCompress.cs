@@ -1,6 +1,6 @@
-﻿using Utilities.File.Models;
+﻿using System.IO.Compression;
+using Utilities.File.Models;
 using Utilities.File.Tools.Zip.Contracts;
-using System.IO.Compression;
 
 namespace Utilities.File.Tools.Zip.Implementations
 {

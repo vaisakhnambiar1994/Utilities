@@ -1,8 +1,7 @@
 ﻿using FastReport;
 using FastReport.Table;
-using GoetheApp.Core.Models.Exceptions;
-using Utilities.File.Generators.PDF.FastReport.Models;
 using System.Drawing;
+using Utilities.File.Generators.PDF.FastReport.Models;
 
 namespace Utilities.File.Generators.PDF.FastReport.Tools
 {
@@ -33,7 +32,7 @@ namespace Utilities.File.Generators.PDF.FastReport.Tools
                     {
                         var row = table.FindObject(rowGroup.Key) as TableRow;
                         if (row == null)
-                            throw new ApplicationException<NullReferenceException>($"Could not find row {rowGroup.Key}");
+                            throw new NullReferenceException($"Could not find row {rowGroup.Key}");
 
                         foreach (var cell in rowGroup)
                         {
